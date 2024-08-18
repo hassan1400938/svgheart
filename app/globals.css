@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-gray-50 ;
+}
+
+.button{
+    @apply px-4 py-2 rounded-full;
+}
+
+.icon_button {
+  @apply p-3 rounded-full;
+}
+.top_icon_button {
+  @apply text-xs text-center font-medium cursor-pointer w-[72px] h-16 p-2 rounded-lg flex flex-col gap-1 items-center justify-center hover:bg-gray-200 hover:text-pink-500;
+}
+
+.bg_theme_pink{
+ background-color: #ee1e6e;
+}

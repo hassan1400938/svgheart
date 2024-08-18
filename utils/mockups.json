@@ -1,0 +1,48 @@
+{
+  "shirts": [
+    {
+      "mockup": "shirt1.png",
+      "left": 200,
+      "top": 100,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "mockup": "shirt2.png",
+      "left": 180,
+      "top": 100,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "mockup": "shirt3.png",
+      "left": 220,
+      "top": 120,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "mockup": "shirt4.png",
+      "left": 180,
+      "top": 100,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "mockup": "shirt5.png",
+      "left": 220,
+      "top": 120,
+      "width": 200,
+      "height": 200
+    }
+  ],
+  "cups": [
+    {
+      "mockup": "cup1.png",
+      "left": 80,
+      "top": 60,
+      "width": 200,
+      "height": 200
+    }
+  ]
+}
