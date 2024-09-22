@@ -11,7 +11,7 @@ export default function Home() {
   // const [backgroundImage, setBackgroundImage] = useState(null);
   const [imageToAdd, setImageToAdd] = useState(null);
   const [selectedObject, setSelectedObject] = useState(null);
-  const [mockupCategory, setMockupCategory] = useState('shirts'); // Default category is 'shirts'
+  const [mockupCategory, setMockupCategory] = useState("shirts"); // Default category is 'shirts'
   const canvasRef = useRef(null);
 
   const handleMockupSelection = (image) => {
@@ -38,13 +38,23 @@ export default function Home() {
       <Header />
 
       <div className="flex flex-1 relative">
-        <LeftSidebar onSelectMockup={handleMockupSelection} onAddText={(type) => canvasRef.current.addText(type)} />
+        <LeftSidebar
+          onSelectMockup={handleMockupSelection}
+          onAddText={(type) => canvasRef.current.addText(type)}
+        />
 
         <main className="flex-1 flex flex-col items-center justify-center">
-          <CanvasArea ref={canvasRef} mockupCategory={mockupCategory} imageToAdd={imageToAdd} />
+          <CanvasArea
+            ref={canvasRef}
+            mockupCategory={mockupCategory}
+            imageToAdd={imageToAdd}
+          />
         </main>
 
-        <RightSidebar selectedObject={selectedObject} onUpdateText={handleTextUpdate} />
+        <RightSidebar
+          selectedObject={selectedObject}
+          onUpdateText={handleTextUpdate}
+        />
       </div>
 
       <Footer />
