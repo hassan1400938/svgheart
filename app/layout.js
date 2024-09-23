@@ -2,15 +2,6 @@ import { Inter } from "next/font/google";
 // import localFont from "next/font/local";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
-// const trebuc = localFont({
-//   src: [
-//     {
-//       path: "../../public/fonts/trebuc.ttf",
-//       weight: "400",
-//     },
-//   ],
-//   variable: "--font-trebuc",
-// });
 
 export const metadata = {
   title: "SVG Heart",
@@ -21,7 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js" integrity="sha512-P6uimDKoj1nnPSo2sPmgbZy99pPq9nHXhLwddOnLi1DC+fEM83FEUcHPRPifbx1rlRkdMinViaWyDfG45G9BuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"
+          integrity="sha512-P6uimDKoj1nnPSo2sPmgbZy99pPq9nHXhLwddOnLi1DC+fEM83FEUcHPRPifbx1rlRkdMinViaWyDfG45G9BuA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
       </head>
       <body className={`${inter.className}`}>{children}</body>
     </html>

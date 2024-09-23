@@ -137,4 +137,5 @@ const CanvasArea = forwardRef(
   }
 );
 
+CanvasArea.displayName = "CanvasArea";
 export default CanvasArea;
